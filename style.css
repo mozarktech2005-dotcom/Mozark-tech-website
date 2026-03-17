@@ -1,0 +1,133 @@
+
+
+body{
+font-family:Arial;
+margin:0;
+background:#f4f4f4;
+}
+
+header{
+background:#1c6b8c;
+color:white;
+padding:15px;
+}
+
+.header-container{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:20px;
+}
+
+.logo img{
+width:80px;
+height: 200px;
+
+}
+
+.title{
+text-align:left;
+}
+
+nav{
+background:#0f4c65;
+padding:10px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#7bc043;
+}
+/* FOOTER */
+
+footer{
+background:#1c6b8c;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+.container{
+width:90%;
+margin:auto;
+}
+
+.search{
+margin:20px 0;
+text-align:center;
+}
+
+.search input{
+padding:10px;
+width:300px;
+}
+
+.hero{
+display:flex;
+gap:20px;
+margin-top:20px;
+}
+
+.hero img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.section{
+margin-top:30px;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.card{
+background:white;
+padding:15px;
+border-radius:10px;
+text-align:center;
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.logo img{
+width:80px;
+height:auto;
+object-fit:contain;
+}
+button{
+background:#1c6b8c;
+color:white;
+border:none;
+padding:10px;
+margin-top:10px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: yellow;
+    color: black;
+    transition: 1.5s;
+}
+
+footer{
+background:#1c6b8c;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
