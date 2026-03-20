@@ -3,13 +3,18 @@
 body{
 font-family:Arial;
 margin:0;
-background-color: #edefe17a;
+background-color: #f2f20a7a;
+
 }
 
 header{
-background:#289dd8;
+background:#0c1201d7;
 color:rgb(241, 248, 250);
 padding:15px;
+position: sticky;
+top: 0px;
+z-index: 1000;
+
 }
 
 .header-container{
@@ -34,6 +39,9 @@ nav{
 background:#0f4c65;
 padding:10px;
 text-align:center;
+position: sticky;
+top: 230px;
+z-index: 10000;
 }
 
 nav a{
@@ -41,10 +49,23 @@ color:white;
 margin:15px;
 text-decoration:none;
 font-weight:bold;
+position: relative;
 }
 
 nav a:hover{
-color:#7bc043;
+header{
+background:#1c6b8c;   /* your color */
+color:white;
+padding:15px;
+position:fixed;      /* or sticky if you're using that */
+top:0;
+width:100%;
+z-index:1000;
+}
+}
+nav a.active{
+    color: orangered;
+
 }
 /* FOOTER */
 
@@ -309,6 +330,64 @@ ul{
 ol{
     color: blue;
 }
+.hot{
+    color: white;
+    background-color: blue;
+    padding-left: 20px;
+}
 
+/* RESPONSIVENESS ONLY */
 
+@media(max-width:768px){
 
+/* Header adjusts */
+.header-container{
+flex-direction:column;
+text-align:center;
+}
+
+/* Logo smaller */
+.logo img{
+width:60px;
+}
+
+/* Navigation becomes vertical */
+nav{
+flex-direction:column;
+align-items:center;
+}
+
+nav a{
+display:block;
+width:100%;
+text-align:center;
+padding:10px;
+border-top:1px solid #ccc;
+}
+
+/* Images fit screen */
+img{
+max-width:100%;
+height:auto;
+}
+
+/* Grids become 1 column */
+.products,
+.services{
+grid-template-columns:1fr;
+}
+
+/* Text scaling */
+h1{
+font-size:20px;
+}
+
+h2{
+font-size:18px;
+}
+
+p{
+font-size:14px;
+}
+
+}
