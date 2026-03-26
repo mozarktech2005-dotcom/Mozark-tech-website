@@ -1,120 +1,75 @@
-
-
+/* RESET */
 body{
 font-family:Arial;
 margin:0;
-background-color: #f2f20a7a;
-
+background-color:#f2f20a7a;
 }
 
+/* HEADER */
 header{
 background:#0c1201d7;
-color:rgb(241, 248, 250);
+color:white;
 padding:15px;
-position: sticky;
-top: 0px;
-z-index: 1000;
-
+position:sticky;
+top:0;
+z-index:1000;
+width:100%;
 }
 
 .header-container{
 display:flex;
 align-items:center;
 justify-content:center;
-gap:20px;
+gap:15px;
+flex-wrap:wrap;
+text-align:center;
 }
 
 .logo img{
 width:80px;
-height: 200px;
-border-radius: 50%;
-
+height:auto;
+border-radius:50%;
 }
 
-.title{
-text-align:left;
-}
-
+/* NAV */
 nav{
 background:#0f4c65;
-padding:10px;
-text-align:center;
-position: sticky;
-top: 230px;
-z-index: 10000;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+position:sticky;
+top:100px;
+z-index:999;
 }
 
 nav a{
 color:white;
-margin:15px;
+margin:10px;
 text-decoration:none;
 font-weight:bold;
-position: relative;
+padding:8px 12px;
 }
 
 nav a:hover{
-header{
-background:#1c6b8c;   /* your color */
-color:white;
-padding:15px;
-position:fixed;      /* or sticky if you're using that */
-top:0;
-width:100%;
-z-index:1000;
+color:#7bc043;
 }
-}
+
 nav a.active{
-    color: orangered;
-
-}
-/* FOOTER */
-
-footer{
-background:#1c6b8c;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
+color:orangered;
 }
 
+/* GENERAL */
 .container{
 width:90%;
 margin:auto;
 }
 
-.search{
-margin:20px 0;
-text-align:center;
-}
-
-.search input{
-padding:10px;
-width:300px;
-}
-
-.hero{
-display:flex;
-gap:20px;
-margin-top:20px;
-}
-
-.hero img{
-width:100%;
-height:310px;
-object-fit:cover;
-}
-
-.section{
-margin-top:30px;
-color: rgb(94, 244, 7);
-text-align: center;
-
-}
-
+/* PRODUCTS */
 .products{
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:20px;
+margin-top:30px;
 }
 
 .card{
@@ -129,21 +84,8 @@ width:100%;
 height:200px;
 object-fit:cover;
 }
-.promo{
-    color: blue;
-    text-align: center;
-    font-weight: bolder;
-    line-height: 16px;
-}
 
-.logo img{
-margin-top:0px;
-width:200px;
-height:200px;
-object-fit:fill;
-margin-left: 0px;
-padding-left: 0px;
-}
+/* BUTTON */
 button{
 background:#1c6b8c;
 color:white;
@@ -151,144 +93,53 @@ border:none;
 padding:10px;
 margin-top:10px;
 }
+
 button:hover{
-    cursor: pointer;
-    background-color: yellow;
-    color: black;
-    transition: 1.5s;
+background:yellow;
+color:black;
+cursor:pointer;
 }
 
-footer{
-background:#1c6b8c;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
-}
-span{
-    color: rgb(81, 239, 8);
-    text-decoration:underline;
-}
-
-.products{
-width:90%;
-margin:auto;
-display:grid;
-grid-template-columns:repeat(3,1fr);
+/* HERO */
+.hero{
+display:flex;
 gap:20px;
-margin-top:30px;
+flex-wrap:wrap;
 }
 
-.card{
-background:white;
-padding:15px;
-text-align:center;
-border-radius:10px;
-}
-
-.card img{
+.hero img{
 width:100%;
-height:200px;
+height:300px;
 object-fit:cover;
 }
-NAVIGATION */
 
-nav{
-background:#0f4c65;
-padding:10px;
-text-align:center;
-}
-
-nav a{
-color:white;
-margin:15px;
-text-decoration:none;
-font-weight:bold;
-}
-
-nav a:hover{
-color:#7bc043;
-text-decoration: underline;
-}
-
-/* CONTENT */
-
-.container{
-width:85%;
-margin:auto;
-margin-top:30px;
-}
-
+/* ABOUT */
 .about-section{
 display:flex;
 gap:30px;
-align-items:center;
+flex-wrap:wrap;
 }
 
 .about-section img{
-width:400px;
+width:100%;
+max-width:400px;
 height:250px;
 object-fit:cover;
-border-radius:10px;
 }
-
-.about-text{
-background:white;
-padding:20px;
-border-radius:10px;
-}
-
-/* MISSION VISION */
 
 .info{
 display:grid;
 grid-template-columns:repeat(2,1fr);
 gap:20px;
-margin-top:30px;
 }
-
-.box{
-background:white;
-padding:20px;
-border-radius:10px;
-}
-
-
-
-/* TEAM */
 
 .team{
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:20px;
-margin-top:30px;
-
 }
 
-.member{
-background:white;
-padding:20px;
-text-align:center;
-border-radius:10px;
-}
-
-.member img{
-width:100%;
-
-object-fit:cover;
-}
-
-/* FOOTER */
-
-footer{
-background:#1c6b8c;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
-}
-
-
+/* FORM */
 form{
 width:50%;
 margin:auto;
@@ -304,90 +155,51 @@ padding:10px;
 margin-top:10px;
 }
 
-button{
+/* FOOTER */
+footer{
 background:#1c6b8c;
 color:white;
-padding:10px;
-border:none;
-margin-top:10px;
-}
-.middle{
-    
-    width: 40%;
-    background-color: white;
-    font-weight: bolder;
-    border-radius: 14px;
-    padding-bottom: 30px;
-    
-}
-ul{
-    color:black;
-    text-align: start;
-    font-size: 12px;
-    
-   
-}
-ol{
-    color: blue;
-}
-.hot{
-    color: white;
-    background-color: blue;
-    padding-left: 20px;
+text-align:center;
+padding:20px;
+margin-top:40px;
 }
 
-/* RESPONSIVENESS ONLY */
-
+/* RESPONSIVE */
 @media(max-width:768px){
 
-/* Header adjusts */
 .header-container{
 flex-direction:column;
-text-align:center;
 }
 
-/* Logo smaller */
 .logo img{
 width:60px;
 }
 
-/* Navigation becomes vertical */
 nav{
 flex-direction:column;
-align-items:center;
+top:90px;
 }
 
 nav a{
 display:block;
 width:100%;
 text-align:center;
-padding:10px;
 border-top:1px solid #ccc;
 }
 
-/* Images fit screen */
-img{
-max-width:100%;
-height:auto;
-}
-
-/* Grids become 1 column */
 .products,
-.services{
+.services,
+.team,
+.info{
 grid-template-columns:1fr;
 }
 
-/* Text scaling */
-h1{
-font-size:20px;
+.hero{
+flex-direction:column;
 }
 
-h2{
-font-size:18px;
-}
-
-p{
-font-size:14px;
+form{
+width:90%;
 }
 
 }
